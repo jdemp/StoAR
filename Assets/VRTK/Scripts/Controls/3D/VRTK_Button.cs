@@ -40,7 +40,7 @@ namespace VRTK
 
         public ButtonEvents events;
 
-        private static float MAX_AUTODETECT_ACTIVATION_LENGTH = 4; // full hight of button
+        private static float MAX_AUTODETECT_ACTIVATION_LENGTH = 4; // full height of button
         private ButtonDirection finalDirection;
         private Vector3 restingPosition;
         private Vector3 activationDir;
