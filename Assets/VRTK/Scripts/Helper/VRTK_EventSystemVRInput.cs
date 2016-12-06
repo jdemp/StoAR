@@ -94,6 +94,7 @@
         {
             if (pointer.pointerEventData.pointerEnter)
             {
+				Debug.Log ("Hover pointerenter");
                 if (ShouldIgnoreElement(pointer.pointerEventData.pointerEnter, pointer.ignoreCanvasWithTagOrClass, pointer.canvasTagOrScriptListPolicy))
                 {
                     return;
@@ -157,6 +158,7 @@
 
             if (pointer.pointerEventData.pointerPress)
             {
+				Debug.Log ("VRTK Event System Click Fired");
                 if (ShouldIgnoreElement(pointer.pointerEventData.pointerPress, pointer.ignoreCanvasWithTagOrClass, pointer.canvasTagOrScriptListPolicy))
                 {
                     return;
@@ -179,6 +181,7 @@
             }
             else if (pointer.pointerEventData.eligibleForClick)
             {
+				Debug.Log ("I can be clicked");
                 foreach (var result in results)
                 {
                     if (ShouldIgnoreElement(result.gameObject, pointer.ignoreCanvasWithTagOrClass, pointer.canvasTagOrScriptListPolicy))
